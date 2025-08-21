@@ -81,5 +81,6 @@ else:
     else:
         print("Total Num:", totNum % 9)
         
-    
+
+
       

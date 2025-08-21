@@ -27,3 +27,6 @@ print(s.split())     # break as list
 
 s= "WelcometoPython"
 print('isAlpha ',s.isalpha())
+
+
+
