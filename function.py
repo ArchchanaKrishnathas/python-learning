@@ -63,4 +63,3 @@ calcInterest(10000,1)       # 1 year
 calcInterest(10000,3)       # 3 years
 calcInterest(10000,5)       # 5 years 
 calcInterest(10000,6)       # above 5 years
-07

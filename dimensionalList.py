@@ -32,4 +32,38 @@ marks= [
     [57,68,85]
 ]
 
-print(f"'Student Name':<14,{subjects}")
+row= "+-----------------+-----------+-----------+-----------+------------+------------+------------+"
+
+print(row)
+print(f"| {'Student Name':<16}| {subjects[0]:<10}| {subjects[1]:<10}| {subjects[2]:<10}| {'Total':<10} | {'Average':<10} | {'Result':<10} |")
+print(row)
+
+i=0
+while i< len(students):
+    print(f"| {students[i]:<16}", end="")
+
+    total=0
+    j=0
+    while j<len(subjects):
+        print(f"| {marks[i][j]:<10}", end="")
+        total+= marks[i][j]
+        j+=1
+
+    avg= total / len(subjects)
+
+    if avg>= 75:
+        result= 'A'
+    elif avg>= 65:
+        result= 'B'
+    elif avg>= 50:
+        result= 'C'
+    elif avg>= 35:
+        result= 'S'
+    else:
+        result= 'F'      
+
+    print(f"| {total:<10} | {avg:<10.2f} | {result:<10} | ")   
+    print(row)
+    i+=1
+
+
