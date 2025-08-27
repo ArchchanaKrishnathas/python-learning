@@ -48,3 +48,6 @@ a,b,*c= marks
 print(a)
 print(b)              
 print(c)
+
+
+

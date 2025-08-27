@@ -11,7 +11,7 @@ for i in range(sub_count):
     subjects.append(sub)
 
 for x in range(st_count):
-    st_name= input(f"Enter the name of student {x+1}:")
+    st_name= input(f"\nEnter the name of student {x+1}:")
     students.append(st_name)
 
     marks = []
@@ -34,9 +34,12 @@ for x in range(st_count):
     else:
         result= 'F'   
     
-    st_data.append([st_name]+ marks + [total, avg, result])
-
+    # st_data.append([st_name]+ marks + [total, avg, result])
+    st_tuple= (st_name, *marks ,total, avg, result)
+    st_data.append(st_tuple)
+    
 print(st_data)
+
 sorted_avg= sorted(average, reverse=True)
 print(sorted_avg)
 
