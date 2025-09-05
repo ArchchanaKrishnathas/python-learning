@@ -67,3 +67,5 @@ for value in d.values():
 
 for key,value in d.items():
     print(key,value)
+    
+  
